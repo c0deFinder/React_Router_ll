@@ -96,18 +96,36 @@ button:focus-visible {
 .NameTittle {
   font-family: fantasy;
   font-size: 30px;
-  margin: 0.5rem;
-  color: gold;
+  margin-bottom: 0.5rem;
+  color: rgb(255, 226, 60);
   text-transform: capitalize;
+  background-color: coral;
+  border-radius: 0.5rem;
+  width: 22rem;
 }
 .orderList {
   list-style-type: none;
   text-align: left;
   margin:10px;
   margin-left: 0px;
+  width: 22rem;
 }
 .cardList {
   width: 22rem;
   border: #f9f9f9 solid;
   border-radius: 1rem;
+  text-align: center;
+}
+.select {
+  background-color: coral;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  height: 2.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.ImgInit {
+  border-radius: 0.5rem;
 }

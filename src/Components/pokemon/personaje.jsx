@@ -19,7 +19,7 @@ const Pokemon = () => {
   return (
     <div className="container">
       <h3 className="tittle">Selecciona un pokemon: </h3>
-      <select  onChange={({ target: { value } }) => selectPokemon(value)}>
+      <select className="select" onChange={({ target: { value } }) => selectPokemon(value)}>
         {pokemons.results?.map((pokemon) => (
           <option className="option" value={pokemon.name} key={pokemon.name}>
             {pokemon.name}
