@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #2a2a2a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242424;
 }
 
 h1 {
@@ -42,7 +43,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #341f67;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -75,4 +76,38 @@ button:focus-visible {
 }
 .navbar {
   margin: 1rem;
+  background-color: chartreuse;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cardImg {
+  background-color: rgba(240, 248, 255, 0.751);
+ border-radius: 1rem;
+ border: #535bf2 solid;
+}
+.tittle {
+  font-size: 32px;
+  margin-right: 0.25rem;
+}
+.NameTittle {
+  font-family: fantasy;
+  font-size: 30px;
+  margin: 0.5rem;
+  color: gold;
+  text-transform: capitalize;
+}
+.orderList {
+  list-style-type: none;
+  text-align: left;
+  margin:10px;
+  margin-left: 0px;
+}
+.cardList {
+  width: 22rem;
+  border: #f9f9f9 solid;
+  border-radius: 1rem;
 }

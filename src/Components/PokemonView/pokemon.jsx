@@ -33,11 +33,11 @@ const PokemonDetails = () => {
 
   return (
     <div>
-      <Card  style={{ width: "22rem" }}>
-        <CardTitle >{pokemon?.name}</CardTitle>
-        <CardImg src={pokemon?.sprites?.front_default} alt=""  style={{ height: "24rem" }} />
+      <Card className="cardList">
+        <CardTitle className="NameTittle">{pokemon?.name}</CardTitle>
+        <CardImg src={pokemon?.sprites?.front_default} alt=""  style={{ height: "22rem" }} className="cardImg" />
         <CardBody >
-          <ul >
+          <ul className="orderList" >
             <li>Altura: {pokemon?.height}</li>
             <li>Peso: {pokemon?.weight}</li>
             <li>Tipo: {pokemon?.types?.[0]?.type?.name}</li>
