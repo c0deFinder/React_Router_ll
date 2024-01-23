@@ -70,3 +70,9 @@ button:focus-visible {
 .active {
   color: darkgreen;
 }
+.btn-detail {
+  margin: 0.5rem;
+}
+.navbar {
+  margin: 1rem;
+}

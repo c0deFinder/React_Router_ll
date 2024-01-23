@@ -24,7 +24,7 @@ const PokemonDetails = () => {
         setPokemon(data);
       } catch (error) {
         console.error(error);
-        // Manejar errores aquí (puedes mostrar un mensaje de error al usuario, etc.)
+        // Manejar errores aquí (puedes mostrar un mensaje de error al usuario
       }
     };
 
@@ -33,11 +33,11 @@ const PokemonDetails = () => {
 
   return (
     <div>
-      <Card className="card" style={{ width: "18rem" }}>
-        <CardTitle className="card-title">{pokemon?.name}</CardTitle>
-        <CardImg src={pokemon?.sprites?.front_default} alt="" className="card-img" />
-        <CardBody className="card-body">
-          <ul className="card-list">
+      <Card  style={{ width: "22rem" }}>
+        <CardTitle >{pokemon?.name}</CardTitle>
+        <CardImg src={pokemon?.sprites?.front_default} alt=""  style={{ height: "24rem" }} />
+        <CardBody >
+          <ul >
             <li>Altura: {pokemon?.height}</li>
             <li>Peso: {pokemon?.weight}</li>
             <li>Tipo: {pokemon?.types?.[0]?.type?.name}</li>

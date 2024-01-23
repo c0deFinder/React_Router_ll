@@ -17,7 +17,7 @@ const Pokemon = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <select className="select" onChange={({ target: { value } }) => selectPokemon(value)}>
         {pokemons.results?.map((pokemon) => (
           <option className="option" value={pokemon.name} key={pokemon.name}>
@@ -25,7 +25,7 @@ const Pokemon = () => {
           </option>
         ))}
       </select>
-      <button className="btn" onClick={showDetail}>Ver Detalle</button>
+      <button className="btn-detail" onClick={showDetail}>Ver Aspectos</button>
     </div>
   );
 };

@@ -1,16 +1,18 @@
 import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
-  const setActiveClass = ({ isActive }) => (isActive ? "active" : undefined);
+
+const NavBar = () => {
+  const setActive = ({ isActive }) => (isActive ? "active" : "inactive");
   return (
-    <div>
-      <NavLink className={setActiveClass} to="/home">
+    <nav className="navbar">
+      <NavLink to="/" className={setActive}>
         Home
       </NavLink>
       {" - "}
-      <NavLink className={setActiveClass} to="/personajes">
-        Personajes
+      <NavLink to="/pokemon" className={setActive}>
+        Pokemons
       </NavLink>
-    </div>
+    </nav>
   );
-}
+};
+export default NavBar
